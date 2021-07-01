@@ -14,7 +14,7 @@ import io.realm.annotations.RealmModule
 class RealmConfigStore {
     companion object {
         var TAG = RealmConfigStore::class.java.simpleName
-        private var configMap: MutableMap<Class<out RealmModel>, RealmConfiguration> = HashMap()
+        var configMap: MutableMap<Class<out RealmModel>, RealmConfiguration> = HashMap()
 
         /**
          * Initialize realm configuration for class
